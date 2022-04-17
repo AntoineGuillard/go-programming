@@ -2,7 +2,6 @@ package mymathtwo
 
 import (
 	"fmt"
-	"github.com/GoesToEleven/go-programming/code_samples/007-documentation/01/mymath"
 	"testing"
 )
 
@@ -14,10 +13,10 @@ func TestSum(t *testing.T) {
 	}
 
 	tests := []test{
-		test{[]int{21, 21}, 42},
-		test{[]int{3, 4, 5}, 12},
-		test{[]int{1, 1}, 2},
-		test{[]int{-1, 0, 1}, 0},
+		{[]int{21, 21}, 42},
+		{[]int{3, 4, 5}, 12},
+		{[]int{1, 1}, 2},
+		{[]int{-1, 0, 1}, 0},
 	}
 
 	for _, v := range tests {
